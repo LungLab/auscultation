@@ -6,7 +6,7 @@ x1 = 15*x1(:, 1);
 N1 = length(x1);                      
 t1 = (0:N1-1)/fs1;                     
 
-%%%%%% plot the signal waveform
+%%%%%% plot the signal waveform %%%%%
 subplot(2, 1, 1);
 plot(t1, x1, 'k')
 xlim([0 max(t1)])
@@ -17,7 +17,7 @@ xlabel('Time (s)')
 ylabel('Amplitude')
 title('Normalized amplitude')
 
-%%%%%% plot the signal spectrogram
+%%%%%% plot the signal spectrogram %%%%%
 subplot(2, 1, 2);
 spectrogram(x1, 1024, 768, 1024, fs1, 'yaxis')
 ylim([0 8])
