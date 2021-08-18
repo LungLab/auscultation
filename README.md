@@ -9,17 +9,18 @@ Management of pulmonary air leak has been difficult, as methods to assess and lo
 - rat.wav : A sample air leak sounds recorded from rat lungs.
 - swine.wav : A sample air leak sounds recorded from swine lungs.
 
-## Installation and execution
-1. To run the MATLAB codes, install “Signal Processing Toolbox” and “Audio Toolbox”.
-2. Ensure the audio files and MATLAB files are stored in the same folder.
-3. To use "LoudnessMap.m", an audiointerface device (e.g., RME Fireface 802) has to be connected to the computer.
+## Installation
+- To run the MATLAB codes, download all the files provided in the tools folder and save them in a folder on your computer. This will take less than a minute. 
+- Ensure the MATLAB files, sample sound files, and any audio files to be tested are stored in the same folder.
+- Ensure “Signal Processing Toolbox” and “Audio Toolbox” are installed along with MATLAB software. This will take approximately 10 minutes, although it can depend on the internet speed.
+- Note that an audio interface device (e.g., RME Fireface 802) and a microphone (e.g., Sony ECM-77B) have to be connected to the computer to run "LoudnessMap.m". On the other hand, "AmpFreq.m" and "SPLTime.m" can be excuted with any pre-acquired sound files. 
 
 ## Software requirements
-The codes were written and tested using MATLAB (version: R2020b) which was running in macOX Big Sur (version: 11.5.1). It is expected that the codes are compatible with Windows, Mac, and Linux operating systems when the toolboxes listed above are properly installed on the computer.
+The codes were written and tested using MATLAB (version: R2020b) which was running in macOX Big Sur (version: 11.5.1). It is expected that the codes are compatible with Windows, Mac, and Linux operating systems when the Signal Processing Toolbox and Audio Toolbox are properly installed on the computer.
 
 ## Hardware requirements
-The codes require only a standard computer with sufficient RAM to execute specific operations performed by a user. However, for acceptable performance and speed, a computer with minimum 4 GB of RAM is recommended. The computer used in this study had 32 GB of RAM with 2 GHz Quad-Core CPU and it took less than 5 seconds to complete the sound analysis using the codes and sample sound files.   
+-	Computer: The codes require only a standard computer with sufficient RAM to execute specific operations performed by a user. However, for acceptable performance and speed, a computer with minimum 4 GB of RAM is recommended. The computer used in this study had 32 GB of RAM with 2 GHz Quad-Core CPU.   
+-	Sound recording system: To acquire sounds for real-time analysis or postprocessing, microphone, amplifier, and audio interface are needed. In this study, we used Sony ECM-77B microphone, Black Lion B12A amplifier, and RME Fireface 802 audio interface have been used.    
 
-## Results
-“AmpFreq.m” was used to generate the sound amplitude and frequency plots (Fig. 2f,h and Fig. 3f,h,i). “SPLTime.m” was used to calculate and plot the sound loudness as a function of time (Fig. 2g and Fig. 3g). “LoudnessMap.m” was used to create a sound intensity map (Fig. 4b,d) (Pinezich et al., Nature Communications, 2021).      
-
+## Demo and instructions for use
+“AmpFreq.m” and "SPLTime.m" are currently written such that "rat.wav" provided as a sample sound files can be imported, processed, and plotted. To test different sound file, change the file name in the code accordingly. Notably, in the manuscript, "AmpFreq.m" was used to generate the sound amplitude and frequency plots (Fig. 2f,h and Fig. 3f,h,i) while “SPLTime.m” was used to calculate and plot the sound loudness as a function of time (Fig. 2g and Fig. 3g). Meanwhile, running “LoudnessMap.m” require a sound recording system connected to the computer. The code was used to create a sound intensity map in this study (Fig. 4b,d). It is expected that it will take less than 5 seconds to complete the sound analysis and data plotting using the codes and sample sound files provided.
