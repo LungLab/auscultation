@@ -9,9 +9,10 @@ Management of pulmonary air leak has been difficult, as methods to assess and lo
 - rat.wav : A sample air leak sounds recorded from rat lungs.
 - swine.wav : A sample air leak sounds recorded from swine lungs.
 
-### Installation:
+### Installation and execution:
 1. To run the MATLAB codes, install “Signal Processing Toolbox” and “Audio Toolbox”.
 2. Ensure the audio files and MATLAB files are stored in the same folder.
+3. To use "LoudnessMap.m", an audiointerface device (e.g., RME Fireface 802) has to be connected to the computer.
 
 ### Software requirements:
 The codes were written and tested using MATLAB (version: R2020b) which was running in macOX Big Sur (version: 11.5.1). It is expected that the codes are compatible with Windows, Mac, and Linux operating systems when the toolboxes listed above are properly installed on the computer.
@@ -20,5 +21,5 @@ The codes were written and tested using MATLAB (version: R2020b) which was runni
 The codes require only a standard computer with sufficient RAM to execute specific operations performed by a user. However, for acceptable performance and speed, a computer with minimum 4 GB of RAM is recommended. The computer used in this study had 32 GB of RAM with 2 GHz Quad-Core CPU and it took less than 5 seconds to complete the sound analysis using the codes and sample sound files.   
 
 ### Results:
-“AmpFreq.m” was used to generate the sound amplitude and frequency plots (Fig. 2f,h and Fig. 3f,h,i). “SPLTime.m” was used to calculate and plot the sound loudness as a function of time (Fig. 2g and Fig. 3g). “LoudnessMap.m” was used to create a sound intensity map (Fig. 4b,d).     
+“AmpFreq.m” was used to generate the sound amplitude and frequency plots (Fig. 2f,h and Fig. 3f,h,i). “SPLTime.m” was used to calculate and plot the sound loudness as a function of time (Fig. 2g and Fig. 3g). “LoudnessMap.m” was used to create a sound intensity map (Fig. 4b,d).      
 
