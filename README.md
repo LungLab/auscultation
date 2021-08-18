@@ -2,12 +2,12 @@
 ### Overview:
 Management of pulmonary air leak has been difficult, as methods to assess and locate leaks are limited, contributing to substantially increased length of hospital stay and risk of complications. We discovered that pulmonary air leaks produce sounds with distinct acoustic signatures that can offer diagnostic and prognostic insight. In this manuscript, we report a sound analysis modality that allows accurate assessment of air leak severity and location via acquisition and quantification of air leak sounds recorded directly from injured lungs. Here, we provide MATLAB codes that we generated to assess the air leak sounds from rat and swine lungs with air leak injury. The codes were used to produce some of the figures included in this manuscript, entitled “Sound-guided assessment and localization of pulmonary air leak” authored by Pinezich et al. (Nature Communications, 2021).
 
-Contents:
-•	AmpFreq.m : The code used to quantify amplitude and obtain spectrogram of the air leak sounds acquired rat and swine lungs.  
-•	SPLTime.m : The code used determine sound pressure level (SPL) of the acquired sounds over time. 
-•	LoudnessMap.m : The code used to measure sound loudness at a measurement point and create a sound intensity heatmap.
-•	rat.wav : A sample air leak sounds recorded from rat lungs.
-•	swine.wav : A sample air leak sounds recorded from swine lungs.
+### Contents:
+-	AmpFreq.m : The code used to quantify amplitude and obtain spectrogram of the air leak sounds acquired rat and swine lungs.  
+- SPLTime.m : The code used determine sound pressure level (SPL) of the acquired sounds over time. 
+- LoudnessMap.m : The code used to measure sound loudness at a measurement point and create a sound intensity heatmap.
+- rat.wav : A sample air leak sounds recorded from rat lungs.
+- swine.wav : A sample air leak sounds recorded from swine lungs.
 
 ### Installation:
 1. To run the MATLAB codes, install “Signal Processing Toolbox” and “Audio Toolbox”.
