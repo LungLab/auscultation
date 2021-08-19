@@ -1,5 +1,5 @@
 clc; clear all; close all;
-% To run this code, an audiointerface device must be 
+% To properly run this code, an audiointerface device must be 
 % connected to the computer.
 
 deviceReader = audioDeviceReader;
